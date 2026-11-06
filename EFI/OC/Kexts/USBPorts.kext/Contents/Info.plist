@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.0 Created by Hackintool</string>
+	<string>1.0 Copyright © 2018-2020 Headsoft. All rights reserved.</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.Baker76.USBPorts</string>
+	<string>com.Headsoft.USBPorts</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,28 +22,30 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>iMac20,1-XHC0</key>
+		<key>MacPro7,1-XHC0</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
-			<string>AppleUSBHostMergeProperties</string>
-			<key>IOParentMatch</key>
-			<dict>
-				<key>IOPropertyMatch</key>
-				<dict>
-					<key>pcidebug</key>
-					<string>4:0:3</string>
-				</dict>
-			</dict>
+			<string>AppleUSBMergeNub</string>
+			<key>IONameMatch</key>
+			<string>XHC0</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x16391022</string>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>4700</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>4700</integer>
 				<key>port-count</key>
 				<data>
 				BgAAAA==
@@ -54,119 +56,97 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS01</string>
 						<key>port</key>
 						<data>
 						AQAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						AQAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>3</integer>
+						<key>name</key>
+						<string>HS02</string>
 						<key>port</key>
 						<data>
 						AgAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						AgAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
-						<key>port</key>
-						<data>
-						AwAAAA==
-						</data>
-						<key>usb-port-number</key>
-						<data>
-						AwAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
-					</dict>
-					<key>HS04</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>0</integer>
+						<key>name</key>
+						<string>HS03</string>
 						<key>port</key>
 						<data>
 						BAAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						BAAAAA==
-						</data>
-						<key>usb-port-type</key>
+					</dict>
+					<key>PRT3</key>
+					<dict>
+						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>PRT3</string>
+						<key>port</key>
+						<data>
+						AwAAAA==
+						</data>
 					</dict>
-					<key>SS05</key>
+					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>9</integer>
+						<key>name</key>
+						<string>SS01</string>
 						<key>port</key>
 						<data>
 						BQAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						BQAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 					</dict>
-					<key>SS06</key>
+					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS02</string>
 						<key>port</key>
 						<data>
 						BgAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						BgAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 					</dict>
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>iMac20,1</string>
+			<string>MacPro7,1</string>
 		</dict>
-		<key>iMac20,1-XHC1</key>
+		<key>MacPro7,1-XHC1-1022_1639</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
-			<string>AppleUSBHostMergeProperties</string>
-			<key>IOParentMatch</key>
-			<dict>
-				<key>IOPropertyMatch</key>
-				<dict>
-					<key>pcidebug</key>
-					<string>4:0:4</string>
-				</dict>
-			</dict>
+			<string>AppleUSBMergeNub</string>
+			<key>IONameMatch</key>
+			<string>XHC1</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x16391022</string>
 			<key>IOProbeScore</key>
 			<integer>5000</integer>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>4700</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>4700</integer>
 				<key>port-count</key>
 				<data>
 				BgAAAA==
@@ -177,96 +157,72 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
+						<key>name</key>
+						<string>HS01</string>
 						<key>port</key>
 						<data>
 						AQAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						AQAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 					</dict>
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>3</integer>
+						<key>name</key>
+						<string>HS02</string>
 						<key>port</key>
 						<data>
 						AgAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						AgAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 					</dict>
 					<key>HS03</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
+						<key>name</key>
+						<string>HS03</string>
 						<key>port</key>
 						<data>
-						AwAAAA==
+						BAAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						AwAAAA==
-						</data>
-						<key>usb-port-type</key>
+					</dict>
+					<key>PRT3</key>
+					<dict>
+						<key>UsbConnector</key>
 						<integer>255</integer>
-					</dict>
-					<key>HS04</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>0</integer>
+						<key>name</key>
+						<string>PRT3</string>
 						<key>port</key>
 						<data>
-						BAAAAA==
+						AwAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						BAAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>0</integer>
 					</dict>
-					<key>SS05</key>
+					<key>SS01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
+						<key>name</key>
+						<string>SS01</string>
 						<key>port</key>
 						<data>
 						BQAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						BQAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>9</integer>
 					</dict>
-					<key>SS06</key>
+					<key>SS02</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
+						<key>name</key>
+						<string>SS02</string>
 						<key>port</key>
 						<data>
 						BgAAAA==
 						</data>
-						<key>usb-port-number</key>
-						<data>
-						BgAAAA==
-						</data>
-						<key>usb-port-type</key>
-						<integer>3</integer>
 					</dict>
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>iMac20,1</string>
+			<string>MacPro7,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
