@@ -36,14 +36,6 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-USBW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
 				<string>SSDT-USBX.aml</string>
 			</dict>
 		</array>
@@ -1432,7 +1424,7 @@
 				<key>revcpu</key>
 				<integer>1</integer>
 				<key>revcpuname</key>
-				<string>AMD Ryzen™ 7  5800H with Radeon Graphics</string>
+				<string>AMD Ryzen™ 7 5800H</string>
 				<key>revpatch</key>
 				<string>auto</string>
 			</dict>
@@ -1447,7 +1439,7 @@
 				<key>bluetoothInternalControllerInfo</key>
 				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
-				<string>revpatch=sbvmm,cpuname revblock=media keepsyms=1 alcid=58 darkwake=0 -NRedDPDelay</string>
+				<string>revpatch=sbvmm,cpuname revblock=media keepsyms=1 alcid=58 darkwake=0</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1521,11 +1513,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02028300GUPHC1UE</string>
+			<string>C020401044NPHC11M</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>PQmHx9PR</data>
+			<data>/ADr3FhS</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1533,9 +1525,9 @@
 			<key>SystemProductName</key>
 			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02D2RZCPN5T</string>
+			<string>C02DHPYUPN5T</string>
 			<key>SystemUUID</key>
-			<string>8A962631-2221-4EF1-BEA1-D4911EC7D3D1</string>
+			<string>485E2066-0945-4F9D-AF16-4CFD27DC5852</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
